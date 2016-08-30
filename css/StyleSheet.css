@@ -12,3 +12,22 @@ position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
 position: absolute; top:0; left: 0; width: 100%; height: 100%;
  
 }
+
+.style-two hr {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+.style-two:before hr { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
